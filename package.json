@@ -57,7 +57,7 @@
     "forceExit": true
   },
   "dependencies": {
-    "consola": "^1.4.4",
+    "consola": "^2.2.3",
     "glob-all": "^3.1.0",
     "sass-resources-loader": "^2.0.0"
   },
