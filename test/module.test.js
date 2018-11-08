@@ -6,6 +6,8 @@ jest.setTimeout(60 * 1000)
 
 let nuxt, port
 
+const url = route => 'http://localhost:' + port + route
+
 describe('nuxt-style-resources', () => {
   let log
 
@@ -17,9 +19,10 @@ describe('nuxt-style-resources', () => {
   describe('scss', () => {
     test('properly import variables', async () => {
       nuxt = await setupNuxt(require('./fixture/sass/nuxt.config'))
-      const { html } = await nuxt.server.renderRoute('/')
-      expect(html).toContain('#333')
-      expect(html).toMatchSnapshot()
+
+      const window = await nuxt.server.renderAndGetWindow(url('/'))
+      const headHtml = window.document.head.innerHTML
+      expect(headHtml).toContain('.ymca{color:#333')
     })
 
     afterEach(async () => {
@@ -31,9 +34,10 @@ describe('nuxt-style-resources', () => {
   describe('stylus', () => {
     test('properly import variables', async () => {
       nuxt = await setupNuxt(require('./fixture/stylus/nuxt.config'))
-      const { html } = await nuxt.server.renderRoute('/')
-      expect(html).toContain('#333')
-      expect(html).toMatchSnapshot()
+
+      const window = await nuxt.server.renderAndGetWindow(url('/'))
+      const headHtml = window.document.head.innerHTML
+      expect(headHtml).toContain('.ymca{color:#333')
     })
 
     afterEach(async () => {
@@ -45,9 +49,11 @@ describe('nuxt-style-resources', () => {
   describe('less', () => {
     test('properly import variables', async () => {
       nuxt = await setupNuxt(require('./fixture/less/nuxt.config'))
-      const { html } = await nuxt.server.renderRoute('/')
-      expect(html).toContain('#333')
-      expect(html).toMatchSnapshot()
+
+      const window = await nuxt.server.renderAndGetWindow(url('/'))
+      const headHtml = window.document.head.innerHTML
+      expect(headHtml).toContain('h1{color:#0f0}')
+      expect(headHtml).toContain('.ymca{color:#333')
     })
 
     afterEach(async () => {
