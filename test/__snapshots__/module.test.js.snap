@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nuxt-style-resources less properly import variables 1`] = `
+"<!doctype html>
+<html data-n-head-ssr data-n-head=\\"\\">
+  <head>
+    <title data-n-head=\\"true\\"></title><style data-vue-ssr-id=\\"fd547dac:0\\">
+.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{transition:none
+}
+.nuxt-progress-failed{background-color:red
+}</style><style data-vue-ssr-id=\\"58b7c7e1:0\\">
+.ymca{color:#333
+}</style>
+  </head>
+  <body data-n-head=\\"\\">
+    <div data-server-rendered=\\"true\\" id=\\"__nuxt\\"><!----><div id=\\"__layout\\"><div><h1>Test</h1> <div class=\\"ymca\\">
+  Test
+</div></div></div></div><script>window.__NUXT__={layout:\\"default\\",data:[{}],error:null,serverRendered:true};</script><script src=\\"/_nuxt/8cb040bf9a2a2dc0c5e7.js\\" defer></script><script src=\\"/_nuxt/be2cd74c7a06d79bb4a6.js\\" defer></script><script src=\\"/_nuxt/2b645494ac9583ec5c4b.js\\" defer></script><script src=\\"/_nuxt/3a46afe1b25fdd4c31bb.js\\" defer></script>
+  </body>
+</html>
+"
+`;
+
+exports[`nuxt-style-resources scss properly import variables 1`] = `
+"<!doctype html>
+<html data-n-head-ssr data-n-head=\\"\\">
+  <head>
+    <title data-n-head=\\"true\\"></title><style data-vue-ssr-id=\\"fd547dac:0\\">
+.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{transition:none
+}
+.nuxt-progress-failed{background-color:red
+}</style><style data-vue-ssr-id=\\"2a96a4dc:0\\">
+.ymca{color:#333
+}</style>
+  </head>
+  <body data-n-head=\\"\\">
+    <div data-server-rendered=\\"true\\" id=\\"__nuxt\\"><!----><div id=\\"__layout\\"><div><h1>Test</h1> <div class=\\"ymca\\">
+  Test
+</div></div></div></div><script>window.__NUXT__={layout:\\"default\\",data:[{}],error:null,serverRendered:true};</script><script src=\\"/_nuxt/edaa642e101629fdac6d.js\\" defer></script><script src=\\"/_nuxt/23a4e80fc8218803cfd3.js\\" defer></script><script src=\\"/_nuxt/2b645494ac9583ec5c4b.js\\" defer></script><script src=\\"/_nuxt/2b560f968562c9e137ec.js\\" defer></script>
+  </body>
+</html>
+"
+`;
+
+exports[`nuxt-style-resources stylus properly import variables 1`] = `
+"<!doctype html>
+<html data-n-head-ssr data-n-head=\\"\\">
+  <head>
+    <title data-n-head=\\"true\\"></title><style data-vue-ssr-id=\\"fd547dac:0\\">
+.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{transition:none
+}
+.nuxt-progress-failed{background-color:red
+}</style><style data-vue-ssr-id=\\"4dc0d6e7:0\\">
+.ymca{color:#333
+}</style>
+  </head>
+  <body data-n-head=\\"\\">
+    <div data-server-rendered=\\"true\\" id=\\"__nuxt\\"><!----><div id=\\"__layout\\"><div><h1>Test</h1> <div class=\\"ymca\\">
+  Test
+</div></div></div></div><script>window.__NUXT__={layout:\\"default\\",data:[{}],error:null,serverRendered:true};</script><script src=\\"/_nuxt/bc574d30049284f7a881.js\\" defer></script><script src=\\"/_nuxt/83a436e44108ac36199a.js\\" defer></script><script src=\\"/_nuxt/2b645494ac9583ec5c4b.js\\" defer></script><script src=\\"/_nuxt/b15af5f054a048678fdb.js\\" defer></script>
+  </body>
+</html>
+"
+`;

@@ -1,0 +1,94 @@
+{
+  "name": "@nuxtjs/style-resources",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Alexander Lichter <npm@lichter.io>"
+    }
+  ],
+  "main": "lib/module.js",
+  "repository": {
+    "mode": "git",
+    "url": "git+https://github.com/nuxt-community/style-resources-module"
+  },
+  "bugs": {
+    "url": "https://github.com/nuxt-community/style-resources-module/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt build --config-file test/fixture/configs/default.js",
+    "lint": "eslint lib test",
+    "test": "yarn run lint && jest",
+    "release": "standard-version && git push --follow-tags && npm publish",
+    "commitlint": "commitlint -e $GIT_PARAMS",
+    "coverage": "codecov"
+  },
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "nuxtjs",
+    "nuxt",
+    "nuxt-module",
+    "purgecss",
+    "css"
+  ],
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/fixture"
+    ],
+    "forceExit": true
+  },
+  "dependencies": {
+    "consola": "^1.4.4",
+    "glob-all": "^3.1.0",
+    "sass-resources-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "babel-eslint": "^10.0.1",
+    "codecov": "^3.1.0",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.25.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
+    "get-port": "^4.0.0",
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "jsdom": "^12.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.10.0",
+    "nuxt-edge": "^2.3.0-25667110.ec55975",
+    "sass-loader": "^7.1.0",
+    "standard-version": "^4.4.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint",
+      "commit-msg": "yarn run commitlint"
+    }
+  }
+}
