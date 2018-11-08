@@ -37,8 +37,11 @@
     "nuxtjs",
     "nuxt",
     "nuxt-module",
-    "purgecss",
-    "css"
+    "sass",
+    "less",
+    "stylus",
+    "style-resources",
+    "import"
   ],
   "engines": {
     "node": ">=8.0.0",
