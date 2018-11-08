@@ -82,6 +82,7 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "node-sass": "^4.10.0",
+    "nuxt": "^2.2.0",
     "nuxt-edge": "^2.3.0-25667110.ec55975",
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
