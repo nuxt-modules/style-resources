@@ -49,8 +49,7 @@ export default {
   css: ['~assets/global.less'],
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
-    less: './assets/vars/*.less',
-    scss: ['./assets/vars/*.scss', './assets/abstracts/_mixins.scss'] // use underscore "_" & also file extension ".scss"
+    less: './assets/vars/*.less'
   }
 }
 ```
@@ -118,7 +117,10 @@ export default {
 export default {
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
-    scss: ['./assets/vars/*.scss', './assets/abstracts/_mixins.scss'] // use underscore "_" & also file extension ".scss"
+    scss: [
+      './assets/vars/*.scss',
+      './assets/abstracts/_mixins.scss' // use underscore "_" & also file extension ".scss"
+      ]
   }
 }
 ```
