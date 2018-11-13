@@ -41,7 +41,9 @@ export default {
   }
 }
 ```
-## Example
+## Examples
+
+### LESS Example
 
 `nuxt.config.js`:
 ```js
@@ -107,6 +109,59 @@ export default {
   }
 </style>
 ```
+
+---
+
+### SCSS Example
+
+`nuxt.config.js`:
+```js
+export default {
+  modules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    scss: [
+      './assets/vars/*.scss',
+      './assets/abstracts/_mixins.scss' // use underscore "_" & also file extension ".scss"
+      ]
+  }
+}
+```
+
+> Instead of `'./assets/abstracts/_mixins.scss'` you can use also `'~assets/abstracts/_mixins.scss'`
+
+`assets/vars/_colors.scss`
+```scss
+$gray: #333;
+```
+
+`assets/abstracts/_mixins.scss`
+
+```scss
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+```
+
+`components/Test.vue`
+```vue
+<template>
+  <div class="ymca">
+    Test
+  </div>
+</template>
+
+<style lang="scss">
+  .ymca {
+    @include center; // will be resolved as position:abslute....
+    color: $gray; // will be resolved to #333
+  }
+</style>
+```
+
+---
 
 ## License
 
