@@ -41,7 +41,9 @@ export default {
   }
 }
 ```
-## Example
+## Examples
+
+### LESS Example
 
 `nuxt.config.js`:
 ```js
@@ -110,7 +112,7 @@ export default {
 
 ---
 
-## SCSS Sample
+### SCSS Example
 
 `nuxt.config.js`:
 ```js
