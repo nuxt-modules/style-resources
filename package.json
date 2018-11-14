@@ -57,7 +57,7 @@
     "forceExit": true
   },
   "dependencies": {
-    "consola": "^2.2.4",
+    "consola": "^2.2.6",
     "glob-all": "^3.1.0",
     "sass-resources-loader": "^2.0.0"
   },
@@ -83,7 +83,7 @@
     "less-loader": "^4.1.0",
     "node-sass": "^4.10.0",
     "nuxt": "^2.2.0",
-    "nuxt-edge": "^2.3.0-25700962.853ca4e",
+    "nuxt-edge": "^2.3.0-25703792.bfb6d6a",
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
     "stylus": "^0.54.5",
