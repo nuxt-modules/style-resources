@@ -1,4 +1,5 @@
 # Nuxt Style Resources - Nobody likes extra @import statements!
+
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/style-resources/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/style-resources)
 [![npm](https://img.shields.io/npm/dt/@nuxtjs/style-resources.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/style-resources)
 [![Build Status](https://travis-ci.com/nuxt-community/style-resources-module.svg?branch=master)](https://travis-ci.com/nuxt-community/style-resources-module)
