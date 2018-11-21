@@ -57,7 +57,7 @@
     "forceExit": true
   },
   "dependencies": {
-    "consola": "^2.2.6",
+    "consola": "^2.3.0",
     "glob-all": "^3.1.0",
     "sass-resources-loader": "^2.0.0"
   },
@@ -76,14 +76,14 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.0.0-beta.4",
     "get-port": "^4.0.0",
-    "husky": "^1.1.4",
+    "husky": "^1.2.0",
     "jest": "^23.6.0",
     "jsdom": "^13.0.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "node-sass": "^4.10.0",
-    "nuxt": "^2.2.0",
-    "nuxt-edge": "^2.3.0-25703792.bfb6d6a",
+    "nuxt": "^2.3.2",
+    "nuxt-edge": "^2.3.0-25706271.cca799c",
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
     "stylus": "^0.54.5",
