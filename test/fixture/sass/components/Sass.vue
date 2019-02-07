@@ -7,5 +7,6 @@
 <style lang="scss">
   .ymca {
     color: $gray;
+    line-height: pow(4, 2);
   }
 </style>
