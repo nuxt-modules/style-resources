@@ -8,7 +8,7 @@ module.exports = {
     resourceHints: false
   },
   styleResources: {
-    scss: ['@/assets/nested/index.scss']
+    scss: ['@/assets/nested/index.scss', 'mathsass']
   },
   modules: ['@@'],
   build: {
