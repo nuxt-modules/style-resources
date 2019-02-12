@@ -156,7 +156,7 @@ $gray: #333;
 
 <style lang="scss">
   .ymca {
-    @include center; // will be resolved as position:abslute....
+    @include center; // will be resolved as position:absolute....
     color: $gray; // will be resolved to #333
   }
 </style>
