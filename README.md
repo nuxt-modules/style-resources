@@ -42,6 +42,9 @@ export default {
   }
 }
 ```
+
+**Important notice:** **Do not import actual styles**. Use this module only to import variables, mixins, functions (et cetera) as they won't exist in the actual build.
+
 ## Examples
 
 ### LESS Example
