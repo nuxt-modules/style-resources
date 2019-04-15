@@ -121,8 +121,16 @@ export default {
 `nuxt.config.js`:
 ```js
 export default {
+  // Use this to include global styles 
+  // DO NOT USE IT TO INCLUDE GLOBAL VARIABLES!!!
+  css: ['~assets/global.scss'],
+  
+  // include this module
   modules: ['@nuxtjs/style-resources'],
+  
   styleResources: {
+    // Include here global variables, that will be present for
+    // global.scss and for inlined styles in *.vue files
     scss: [
       './assets/vars/*.scss',
       './assets/abstracts/_mixins.scss' // use underscore "_" & also file extension ".scss"
