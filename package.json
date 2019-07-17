@@ -87,7 +87,7 @@
     "nuxt": "^2.4.3",
     "nuxt-edge": "^2.4.1-25812008.a303ea89",
     "sass-loader": "^7.1.0",
-    "standard-version": "^4.4.0",
+    "standard-version": "^6.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },
