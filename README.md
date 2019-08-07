@@ -36,7 +36,8 @@ export default {
 
   styleResources: {
    // your settings here
-   sass: [], // alternative: scss
+   sass: [],
+   scss: [],
    less: [],
    stylus: []
   }

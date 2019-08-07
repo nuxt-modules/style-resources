@@ -35,6 +35,7 @@ describe('nuxt-style-resources', () => {
         const window = await (nuxt.server || nuxt).renderAndGetWindow(url('/'))
         const headHtml = window.document.head.innerHTML
         expect(headHtml).toContain('.ymca{color:#333;line-height:16')
+        expect(headHtml).toContain('.ymca{background-color:#fff')
       })
 
       afterEach(async () => {
