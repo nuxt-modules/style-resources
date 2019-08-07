@@ -10,3 +10,8 @@
     line-height: pow(4, 2);
   }
 </style>
+
+<style lang="sass">
+  .ymca
+    background-color: $white
+</style>
