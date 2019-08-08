@@ -1,8 +1,10 @@
+import mod from '@@'
 const { resolve } = require('path')
 
 module.exports = {
   rootDir: resolve(__dirname, '../../../'),
-  srcDir: resolve(__dirname),
+  buildDir: resolve(__dirname, '.nuxt'),
+  srcDir: __dirname,
   css: ['@/assets/a.scss', '@/assets/a.sass'],
   render: {
     resourceHints: false
@@ -11,7 +13,7 @@ module.exports = {
     scss: ['@/assets/nested/index.scss', 'mathsass'],
     sass: ['@/assets/nested/index.sass']
   },
-  modules: ['@@'],
+  modules: [mod],
   build: {
     quiet: false,
     optimization: {

@@ -1,13 +1,15 @@
+import mod from '@@'
 const { resolve } = require('path')
 
 module.exports = {
   rootDir: resolve(__dirname, '../../../'),
-  srcDir: resolve(__dirname),
+  buildDir: resolve(__dirname, '.nuxt'),
+  srcDir: __dirname,
   css: ['~assets/a.less'],
   render: {
     resourceHints: false
   },
-  modules: ['@@'],
+  modules: [mod],
   build: {
     styleResources: {
       less: './assets/vars/*.less'
