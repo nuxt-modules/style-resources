@@ -9,6 +9,7 @@
     }
   ],
   "main": "lib/module.js",
+  "types": "types/index.d.ts",
   "repository": {
     "mode": "git",
     "url": "git+https://github.com/nuxt-community/style-resources-module"
@@ -50,7 +51,6 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxt/config": "latest",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "codecov": "latest",
