@@ -1,7 +1,8 @@
+jest.setTimeout(60000)
+
 const consola = require('consola')
 const getPort = require('get-port')
 const { Nuxt, Builder } = require('nuxt-edge')
-jest.setTimeout(60 * 1000)
 
 let nuxt, port
 
@@ -34,9 +35,7 @@ describe('nuxt-style-resources', () => {
     })
 
     afterEach(async () => {
-      if (nuxt) {
-        await nuxt.close()
-      }
+      await nuxt.close()
     })
   })
   describe('stylus', () => {
@@ -49,9 +48,7 @@ describe('nuxt-style-resources', () => {
     })
 
     afterEach(async () => {
-      if (nuxt) {
-        await nuxt.close()
-      }
+      await nuxt.close()
     })
   })
   describe('less', () => {
@@ -65,9 +62,7 @@ describe('nuxt-style-resources', () => {
     })
 
     afterEach(async () => {
-      if (nuxt) {
-        await nuxt.close()
-      }
+      await nuxt.close()
     })
   })
 })

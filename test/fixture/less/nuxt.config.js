@@ -1,4 +1,3 @@
-import mod from '@@'
 const { resolve } = require('path')
 
 module.exports = {
@@ -9,7 +8,9 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  modules: [mod],
+  modules: [
+    { handler: require('../../../') }
+  ],
   build: {
     styleResources: {
       less: './assets/vars/*.less'

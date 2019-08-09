@@ -1,4 +1,3 @@
-import mod from '@@'
 const { resolve } = require('path')
 
 module.exports = {
@@ -12,7 +11,9 @@ module.exports = {
   styleResources: {
     stylus: ['~assets/variables.styl']
   },
-  modules: [mod],
+  modules: [
+    { handler: require('../../../') }
+  ],
   build: {
     quiet: false,
     optimization: {

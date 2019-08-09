@@ -1,4 +1,3 @@
-import mod from '@@'
 const { resolve } = require('path')
 
 module.exports = {
@@ -13,7 +12,9 @@ module.exports = {
     scss: ['@/assets/nested/index.scss', 'mathsass'],
     sass: ['@/assets/nested/index.sass']
   },
-  modules: [mod],
+  modules: [
+    { handler: require('../../../') }
+  ],
   build: {
     quiet: false,
     optimization: {
