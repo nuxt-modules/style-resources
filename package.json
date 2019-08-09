@@ -23,8 +23,7 @@
     "dev": "nuxt build --config-file test/fixture/configs/default.js",
     "lint": "eslint --ext .js,.vue lib test",
     "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "coverage": "codecov"
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
   },
   "files": [
     "lib"
@@ -44,32 +43,29 @@
     "npm": ">=5.0.0"
   },
   "dependencies": {
-    "consola": "^2.4.0",
+    "consola": "^2.10.1",
     "glob-all": "^3.1.0",
     "sass-resources-loader": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxt/config": "^2.8.1",
+    "@nuxt/config": "latest",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
-    "babel-jest": "latest",
     "codecov": "latest",
     "eslint": "latest",
     "get-port": "latest",
     "husky": "latest",
     "jest": "latest",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "mathsass": "^0.10.1",
-    "node-sass": "^4.11.0",
+    "less": "latest",
+    "less-loader": "latest",
+    "mathsass": "latest",
+    "node-sass": "latest",
     "nuxt-edge": "latest",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "latest",
     "standard-version": "latest",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus": "latest",
+    "stylus-loader": "latest"
   }
 }

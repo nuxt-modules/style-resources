@@ -11,4 +11,4 @@ install:
 script:
 - yarn test
 after_success:
-- yarn coverage
+- yarn run codecov
