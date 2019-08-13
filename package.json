@@ -51,6 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@nuxt/config": "latest",
     "@nuxtjs/eslint-config": "latest",
     "codecov": "latest",
     "eslint": "latest",
