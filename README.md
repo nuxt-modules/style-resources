@@ -19,6 +19,12 @@
 * Compatible with Nuxt's `build.styleResources` (and will take them over directly if included!)
 * Blazing fast:tm:
 
+## Warning
+
+**Do not import actual styles**.
+Use this module only to import variables, mixins, functions (et cetera) as they won't exist in the actual build. Importing actual styles will include them in every component and will also make your build/HMR magnitudes slower. 
+**Do not do this!**
+
 ## Setup
 
 - If not already present, add the dependencies you need for SASS/LESS/Stylus (depending on your needs)
@@ -43,8 +49,6 @@ export default {
   }
 }
 ```
-
-**Important notice:** **Do not import actual styles**. Use this module only to import variables, mixins, functions (et cetera) as they won't exist in the actual build. Importing actual styles will include them in every component and will also make your build/HMR magnitudes slower. **Do not do this!**
 
 ## Examples
 
