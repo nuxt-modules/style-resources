@@ -81,7 +81,7 @@
     "jest": "^24.1.0",
     "jsdom": "^13.2.0",
     "less": "^3.9.0",
-    "less-loader": "^4.1.0",
+    "less-loader": "^5.0.0",
     "mathsass": "^0.10.1",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.3",
