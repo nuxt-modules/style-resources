@@ -31,7 +31,7 @@ Use this module only to import variables, mixins, functions (et cetera) as they 
   - SASS: `yarn add sass-loader node-sass`
   - LESS: `yarn add less-loader less`
   - Stylus: `yarn add stylus-loader stylus`
-- Add `@nuxtjs/style-resources` dependency using yarn or npm to your project (`yarn add @nuxtjs/style-resources`)
+- Add `@nuxtjs/style-resources` dependency using yarn or npm to your project (`yarn add -D @nuxtjs/style-resources`)
 - Add `@nuxtjs/style-resources` to `modules` section of `nuxt.config.js`:
 
 ```js
