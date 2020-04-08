@@ -85,7 +85,7 @@
     "mathsass": "^0.10.1",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.3",
-    "nuxt-edge": "^2.4.1-25812008.a303ea89",
+    "nuxt-edge": "^2.13.0-26438413.c02ded2d",
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
     "stylus": "^0.54.5",
