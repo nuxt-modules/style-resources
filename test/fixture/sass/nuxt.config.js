@@ -11,7 +11,7 @@ module.exports = {
     scss: ['@/assets/nested/index.scss', 'mathsass'],
     sass: ['@/assets/nested/index.sass']
   },
-  modules: ['@@'],
+  buildModules: ['@@'],
   build: {
     quiet: false,
     optimization: {

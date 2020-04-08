@@ -7,7 +7,7 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  modules: ['@@'],
+  buildModules: ['@@'],
   build: {
     styleResources: {
       less: './assets/vars/*.less'

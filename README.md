@@ -32,11 +32,11 @@ Use this module only to import variables, mixins, functions (et cetera) as they 
   - LESS: `yarn add less-loader less`
   - Stylus: `yarn add stylus-loader stylus`
 - Add `@nuxtjs/style-resources` dependency using yarn or npm to your project (`yarn add -D @nuxtjs/style-resources`)
-- Add `@nuxtjs/style-resources` to `modules` section of `nuxt.config.js`:
+- Add `@nuxtjs/style-resources` to `buildModules` section of `nuxt.config.js`:
 
 ```js
 export default {
-  modules: [
+  buildMbuildModules: [
     '@nuxtjs/style-resources',
   ],
 
@@ -58,7 +58,7 @@ export default {
 ```js
 export default {
   css: ['~assets/global.less'],
-  modules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources'],
   styleResources: {
     less: './assets/vars/*.less'
   }
@@ -126,7 +126,7 @@ export default {
 `nuxt.config.js`:
 ```js
 export default {
-  modules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources'],
   styleResources: {
     scss: [
       './assets/vars/*.scss',
