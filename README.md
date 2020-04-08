@@ -36,7 +36,7 @@ Use this module only to import variables, mixins, functions (et cetera) as they 
 
 ```js
 export default {
-  buildMbuildModules: [
+  buildModules: [
     '@nuxtjs/style-resources',
   ],
 
