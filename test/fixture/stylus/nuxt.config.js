@@ -7,10 +7,9 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  styleResources: {
-    stylus: ['~assets/variables.styl']
-  },
-  buildModules: ['@@'],
+  buildModules: [
+    ['@@', { stylus: ['~assets/variables.styl'] }]
+  ],
   build: {
     quiet: false,
     optimization: {
