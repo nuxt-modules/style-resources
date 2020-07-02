@@ -59,6 +59,7 @@
   "dependencies": {
     "consola": "^2.4.0",
     "glob-all": "^3.1.0",
+    "postcss-simple-vars": "^5.0.2",
     "sass-resources-loader": "^2.0.0"
   },
   "devDependencies": {

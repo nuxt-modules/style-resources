@@ -14,7 +14,7 @@
 ## Features
 
 * Share variables, mixins, functions across all style files (no `@import` needed)
-* Support for SASS, LESS and Stylus
+* Support for SASS, LESS, Stylus, and PostCSS
 * Aliases (`~/assets/variables.css`) and globbing as supported
 * Compatible with Nuxt's `build.styleResources` (and will take them over directly if included!)
 * Blazing fast:tm:
@@ -27,7 +27,7 @@ Use this module only to import variables, mixins, functions (et cetera) as they 
 
 ## Setup
 
-- If not already present, add the dependencies you need for SASS/LESS/Stylus (depending on your needs)
+- If not already present, add the dependencies you need for SASS/LESS/Stylus (depending on your needs). PostCSS and `postcss-loader` are included by default as part of Nuxt.js.
   - SASS: `yarn add sass-loader node-sass`
   - LESS: `yarn add less-loader less`
   - Stylus: `yarn add stylus-loader stylus`
@@ -45,7 +45,8 @@ export default {
    sass: [],
    scss: [],
    less: [],
-   stylus: []
+   stylus: [],
+   postcss: []
   }
 }
 ```
@@ -165,6 +166,42 @@ $gray: #333;
 <style lang="scss">
   .ymca {
     @include center; // will be resolved as position:absolute....
+    color: $gray; // will be resolved to #333
+  }
+</style>
+```
+
+---
+### PostCSS Example
+
+`nuxt.config.js`:
+```js
+export default {
+  buildModules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    postcss: [
+      './assets/_variables.pcss' // use ".pcss" or ".postcss" file extension
+    ]
+  }
+}
+```
+
+`assets/_variables.pcss`
+```scss
+$gray: #333;
+```
+
+
+`components/Test.vue`
+```vue
+<template>
+  <div class="post">
+    Test
+  </div>
+</template>
+
+<style lang="scss">
+  .post {
     color: $gray; // will be resolved to #333
   }
 </style>

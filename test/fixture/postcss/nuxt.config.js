@@ -18,6 +18,11 @@ module.exports = {
       splitChunks: {
         name: true
       }
+    },
+    postcss: {
+      plugins: {
+        'postcss-simple-vars': {}
+      }
     }
   }
 }

@@ -75,5 +75,21 @@ describe('nuxt-style-resources', () => {
         }
       })
     })
+    describe('postcss', () => {
+      test('properly import variables', async () => {
+        nuxt = await setupNuxt(require('./fixture/postcss/nuxt.config'))
+
+        const window = await (nuxt.server || nuxt).renderAndGetWindow(url('/'))
+        const headHtml = window.document.head.innerHTML
+        expect(headHtml).toContain('.post{color:#333')
+        expect(headHtml).toContain('.post{background-color:#fff')
+      })
+
+      afterEach(async () => {
+        if (nuxt) {
+          await nuxt.close()
+        }
+      })
+    })
   })
 })
