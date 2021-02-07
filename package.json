@@ -89,7 +89,7 @@
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^5.0.0"
   },
   "husky": {
     "hooks": {
