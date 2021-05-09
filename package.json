@@ -83,7 +83,7 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mathsass": "^0.10.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^6.0.0",
     "nuxt": "^2.4.3",
     "nuxt-edge": "^2.13.0-26438413.c02ded2d",
     "sass-loader": "^7.1.0",
