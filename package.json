@@ -20,7 +20,7 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt build --config-file test/fixture/configs/default.js",
+    "dev": "nuxt dev --config-file test/fixture/sass/nuxt.config.js",
     "lint": "eslint lib test",
     "test": "yarn run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish",
@@ -83,7 +83,6 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mathsass": "^0.10.1",
-    "nuxt": "^2.4.3",
     "nuxt-edge": "^2.13.0-26438413.c02ded2d",
     "sass": "^1.34.0",
     "sass-loader": "^7.1.0",
