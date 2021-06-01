@@ -20,7 +20,7 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt build --config-file test/fixture/configs/default.js",
+    "dev": "nuxt dev --config-file test/fixture/sass/nuxt.config.js",
     "lint": "eslint lib test",
     "test": "yarn run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish",
@@ -64,7 +64,6 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.0",
     "@commitlint/config-conventional": "^7.5.0",
-    "@nuxt/config": "^2.8.1",
     "@nuxtjs/eslint-config": "^0.0.1",
     "babel-eslint": "^10.0.1",
     "codecov": "^3.1.0",
@@ -78,13 +77,12 @@
     "eslint-plugin-vue": "^5.1.0",
     "get-port": "^4.1.0",
     "husky": "^1.3.1",
-    "jest": "^24.1.0",
-    "jsdom": "^13.2.0",
+    "jest": "^27.0.3",
+    "jsdom": "^16.6.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mathsass": "^0.10.1",
-    "nuxt": "^2.4.3",
-    "nuxt-edge": "^2.13.0-26438413.c02ded2d",
+    "nuxt-edge": "^2.16.0-27041793.b9bfb9df",
     "sass": "^1.34.0",
     "sass-loader": "^7.1.0",
     "standard-version": "^4.4.0",
