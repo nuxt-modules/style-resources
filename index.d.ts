@@ -1,4 +1,4 @@
-import NuxtConfiguration from '@nuxt/config'
+import '@nuxt/config'
 
 declare module '@nuxt/config/types/index' {
   export default interface NuxtConfiguration {
@@ -7,6 +7,7 @@ declare module '@nuxt/config/types/index' {
       scss?: string[] | string
       less?: string[] | string
       stylus?: string[] | string
+      hoistUseStatements?: boolean
     }
   }
 }

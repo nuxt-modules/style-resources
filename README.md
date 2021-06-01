@@ -16,13 +16,14 @@
 * Share variables, mixins, functions across all style files (no `@import` needed)
 * Support for SASS, LESS and Stylus
 * Aliases (`~/assets/variables.css`) and globbing as supported
+* Support for hoisting `@use` imports
 * Compatible with Nuxt's `build.styleResources` (and will take them over directly if included!)
 * Blazing fast:tm:
 
 ## Warning
 
 **Do not import actual styles**.
-Use this module only to import variables, mixins, functions (et cetera) as they won't exist in the actual build. Importing actual styles will include them in every component and will also make your build/HMR magnitudes slower. 
+Use this module only to import variables, mixins, functions (et cetera) as they won't exist in the actual build. Importing actual styles will include them in every component and will also make your build/HMR magnitudes slower.
 **Do not do this!**
 
 ## Setup
@@ -45,7 +46,8 @@ export default {
    sass: [],
    scss: [],
    less: [],
-   stylus: []
+   stylus: [],
+   hoistUseStatements: true  // Hoists the "@use" imports. Applies only to "sass", "scss" and "less". Default: false.
   }
 }
 ```
