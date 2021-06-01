@@ -1,6 +1,5 @@
 const consola = require('consola')
 const getPort = require('get-port')
-const nuxtStable = require('nuxt')
 const nuxtEdge = require('nuxt-edge')
 jest.setTimeout(60 * 1000)
 
@@ -18,7 +17,7 @@ const setupNuxtFn = ({ Nuxt, Builder }) => async (config) => {
 }
 
 describe('nuxt-style-resources', () => {
-  describe.each([['nuxt', nuxtStable], ['nuxt-edge', nuxtEdge]])('%s', (_, nuxtImpl) => {
+  describe.each([['nuxt-edge', nuxtEdge]])('%s', (_, nuxtImpl) => {
     let log
 
     const setupNuxt = setupNuxtFn(nuxtImpl)
