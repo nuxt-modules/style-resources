@@ -9,7 +9,8 @@ module.exports = {
   },
   styleResources: {
     scss: ['@/assets/nested/index.scss', 'mathsass'],
-    sass: ['@/assets/nested/index.sass']
+    sass: ['@/assets/nested/index.sass'],
+    hoistUseStatements: true
   },
   buildModules: ['@@'],
   build: {

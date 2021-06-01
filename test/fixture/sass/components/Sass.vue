@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+  @use 'sass:math';
+
   .ymca {
     color: $gray;
     line-height: pow(4, 2);
