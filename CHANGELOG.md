@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/nuxt-community/style-resources-module/compare/v1.0.0...v1.1.0) (2021-06-02)
+
+
+### Features
+
+* support "hoistUseStatements" loader option ([#162](https://github.com/nuxt-community/style-resources-module/issues/162)) ([e53770d](https://github.com/nuxt-community/style-resources-module/commit/e53770d))
+* take values from options ([#83](https://github.com/nuxt-community/style-resources-module/issues/83)) ([e1754ed](https://github.com/nuxt-community/style-resources-module/commit/e1754ed))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/nuxt-community/style-resources-module/compare/v0.1.2...v1.0.0) (2019-08-07)
 
