@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom",
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    // "checkJs": true,
+    "strict": true,
+    "paths": {
+      "~/*": [
+        "./*",
+      ],
+      "@/*": [
+        "./*",
+      ],
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "@nuxt/types",
+    ],
+  },
+}

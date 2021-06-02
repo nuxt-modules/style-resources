@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 
-module.exports = {
+/** @type {import('@nuxt/types').NuxtConfig} */
+const config = {
   rootDir: resolve(__dirname, '../../../'),
   srcDir: resolve(__dirname),
   css: ['~assets/a.less'],
@@ -20,3 +21,5 @@ module.exports = {
     }
   }
 }
+
+module.exports = config
