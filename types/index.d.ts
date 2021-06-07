@@ -1,6 +1,6 @@
 import '@nuxt/types'
 
-interface Options  {
+interface Options {
   sass?: string[] | string
   scss?: string[] | string
   less?: string[] | string
