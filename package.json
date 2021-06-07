@@ -81,7 +81,7 @@
     "nuxt-edge": "^2.16.0-27041793.b9bfb9df",
     "sass": "^1.34.0",
     "sass-loader": "^7.1.0",
-    "standard-version": "^4.4.0",
+    "standard-version": "^9.3.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "typescript": "^4.3.2"
