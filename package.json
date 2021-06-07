@@ -64,8 +64,8 @@
     "sass-resources-loader": "^2.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.0",
-    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@nuxt/types": "^2.15.6",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@types/jest": "^26.0.23",
