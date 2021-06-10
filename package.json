@@ -21,15 +21,19 @@
   },
   "scripts": {
     "dev": "nuxt dev --config-file test/fixture/sass/nuxt.config.js",
-    "lint": "eslint --ext .js,.ts lib test types",
-    "test": "yarn run lint && jest",
+    "lint": "eslint --ext .js,.ts,.vue lib test types",
+    "test": "yarn lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish",
     "commitlint": "commitlint -e $GIT_PARAMS",
     "coverage": "codecov"
   },
   "types": "types/index.d.ts",
   "eslintIgnore": [
-    "lib/templates/*.*"
+    ".nuxt",
+    "coverage",
+    "dist",
+    "lib/templates/*.*",
+    "node_modules"
   ],
   "files": [
     "lib",
@@ -52,11 +56,9 @@
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/fixture"
-    ],
-    "forceExit": true
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
   },
   "dependencies": {
     "consola": "^2.4.0",
