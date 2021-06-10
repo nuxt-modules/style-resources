@@ -76,7 +76,7 @@
     "jest": "^27.0.3",
     "jsdom": "^16.6.0",
     "less": "^3.9.0",
-    "less-loader": "^4.1.0",
+    "less-loader": "^9.1.0",
     "mathsass": "^0.10.1",
     "nuxt-edge": "^2.16.0-27041793.b9bfb9df",
     "sass": "^1.34.0",
