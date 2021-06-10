@@ -2,7 +2,6 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Build Status][travis-ci-src]][travis-ci-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
@@ -187,9 +186,6 @@ Copyright (c) Alexander Lichter
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/style-resources.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@nuxtjs/style-resources
-
-[travis-ci-src]: https://travis-ci.com/nuxt-community/style-resources-module.svg?branch=master
-[travis-ci-href]: https://travis-ci.com/nuxt-community/style-resources-module
 
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/style-resources-module.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/nuxt-community/style-resources-module
