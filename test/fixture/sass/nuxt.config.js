@@ -3,7 +3,8 @@ const { resolve } = require('path')
 /** @type {import('@nuxt/types').NuxtConfig} */
 const config = {
   rootDir: resolve(__dirname, '../../../'),
-  srcDir: resolve(__dirname),
+  buildDir: resolve(__dirname, '.nuxt'),
+  srcDir: __dirname,
   css: ['@/assets/a.scss', '@/assets/a.sass'],
   render: {
     resourceHints: false
@@ -13,7 +14,9 @@ const config = {
     sass: ['@/assets/nested/index.sass'],
     hoistUseStatements: true
   },
-  buildModules: ['@@'],
+  buildModules: [
+    resolve(__dirname, '../../..')
+  ],
   build: {
     quiet: false,
     optimization: {

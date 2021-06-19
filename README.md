@@ -1,11 +1,9 @@
 # Nuxt Style Resources - Nobody likes extra @import statements!
 
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/style-resources/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/style-resources)
-[![npm](https://img.shields.io/npm/dt/@nuxtjs/style-resources.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/style-resources)
-[![Build Status](https://travis-ci.com/nuxt-community/style-resources-module.svg?branch=master)](https://travis-ci.com/nuxt-community/style-resources-module)
-[![codecov](https://codecov.io/gh/nuxt-community/style-resources-module/branch/master/graph/badge.svg)](https://codecov.io/gh/nuxt-community/style-resources-module)
-[![Dependencies](https://david-dm.org/nuxt-community/style-resources-module/status.svg?style=flat-square)](https://david-dm.org/nuxt-community/style-resources-module)
-[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Codecov][codecov-src]][codecov-href]
+[![License][license-src]][license-href]
 
 >
 
@@ -181,3 +179,16 @@ Inspired by [nuxt-sass-resources-loader](https://github.com/anteriovieira/nuxt-s
 [MIT License](LICENSE)
 
 Copyright (c) Alexander Lichter
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/style-resources/latest.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@nuxtjs/style-resources
+
+[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/style-resources.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/style-resources
+
+[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/style-resources-module.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/nuxt-community/style-resources-module
+
+[license-src]: https://img.shields.io/npm/l/@nuxtjs/style-resources.svg?style=flat-square
+[license-href]: https://npmjs.com/package/@nuxtjs/style-resources

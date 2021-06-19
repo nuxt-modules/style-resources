@@ -3,7 +3,8 @@ const { resolve } = require('path')
 /** @type {import('@nuxt/types').NuxtConfig} */
 const config = {
   rootDir: resolve(__dirname, '../../../'),
-  srcDir: resolve(__dirname),
+  buildDir: resolve(__dirname, '.nuxt'),
+  srcDir: __dirname,
   css: ['~assets/a.styl'],
   render: {
     resourceHints: false
@@ -11,7 +12,9 @@ const config = {
   styleResources: {
     stylus: ['~assets/variables.styl']
   },
-  buildModules: ['@@'],
+  buildModules: [
+    resolve(__dirname, '../../..')
+  ],
   build: {
     quiet: false,
     optimization: {
