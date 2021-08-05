@@ -10222,10 +10222,10 @@ sass-loader@^7.3.1:
     pify "^4.0.1"
     semver "^6.3.0"
 
-sass-resources-loader@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.2.3.tgz#1be92ea326a4a2d8d7c3483a01577a70df7d7fa1"
-  integrity sha512-QHyhf1euMF16qC5R24felQYkg7NvSlsNkidUpgrga27hMLqNP5TfmQ6K0iVn7BurKmUU/CDuygZh0py9lXeYPQ==
+sass-resources-loader@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.2.4.tgz#1a86fba499e74a88cb7ce95f0c98449f348d360e"
+  integrity sha512-hIQhBygYky+rLf+4cuoGYONZ623CEH4Swo1fs1WRJkukbqdvN1VIu2KCL59du6vX92bNELzNkGPLx+NorN73xA==
   dependencies:
     async "^3.2.0"
     chalk "^4.1.0"

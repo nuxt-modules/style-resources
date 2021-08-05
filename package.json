@@ -64,7 +64,7 @@
   "dependencies": {
     "consola": "^2.15.3",
     "glob-all": "^3.2.1",
-    "sass-resources-loader": "^2.2.3"
+    "sass-resources-loader": "^2.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
