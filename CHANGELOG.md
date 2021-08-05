@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/nuxt-community/style-resources-module/compare/v1.2.0...v1.2.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass-resources-loader to ^2.2.4 ([#176](https://github.com/nuxt-community/style-resources-module/issues/176)) ([97cefe1](https://github.com/nuxt-community/style-resources-module/commit/97cefe180cd87f9651b66d0e6944c5b8c58a19c5))
+
 ## [1.2.0](https://github.com/nuxt-community/style-resources-module/compare/v1.1.0...v1.2.0) (2021-06-22)
 
 
