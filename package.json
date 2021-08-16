@@ -50,10 +50,6 @@
     "style-resources",
     "import"
   ],
-  "engines": {
-    "node": ">=v10.24.1",
-    "npm": ">=6.14.14"
-  },
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
