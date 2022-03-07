@@ -83,7 +83,7 @@
     "mathsass": "^0.11.0",
     "nuxt-edge": "^2.16.0-27132492.cdbea391",
     "sass": "^1.37.5",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^12.6.0",
     "standard-version": "^9.3.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
