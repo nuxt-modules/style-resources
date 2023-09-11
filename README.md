@@ -1,4 +1,4 @@
-# Nuxt Style Resources - Nobody likes extra @import statements!
+# Style Resources for Nuxt 2 - Nobody likes extra @import statements!
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
