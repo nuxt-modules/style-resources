@@ -62,7 +62,7 @@
     ]
   },
   "dependencies": {
-    "consola": "^2.15.3",
+    "consola": "^3.2.3",
     "glob-all": "^3.2.1",
     "sass-resources-loader": "^2.2.4"
   },
