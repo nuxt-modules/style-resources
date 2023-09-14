@@ -4,6 +4,6 @@ module.exports = {
     sourceType: 'module'
   },
   extends: [
-    '@nuxtjs/eslint-config-typescript'
+    '@nuxt/eslint-config'
   ]
 }
