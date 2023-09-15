@@ -1,11 +1,15 @@
-# Style Resources for Nuxt 2 - Nobody likes extra @import statements!
+# Style Resources for Nuxt 3 - Nobody likes extra @import statements!
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
->
+If you would like to use the stable version for Nuxt 2, please see the [`mater` branch](https://github.com/nuxt-community/style-resources-module/tree/master)
+
+If you are using vite, this module is unnecessary.
+
+You can use the [`css.preprocessorOptions`](https://vitejs.dev/config/shared-options.html#css-preprocessoroptions) instead.
 
 [📖 **Release Notes**](CHANGELOG.md)
 
