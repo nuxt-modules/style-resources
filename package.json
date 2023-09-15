@@ -32,7 +32,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "lint": "eslint --ext .js,.ts,.vue lib test",
+    "lint": "eslint --ext .js,.ts,.vue src test",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "release": "standard-version && git push --follow-tags && npm publish",
@@ -65,13 +65,6 @@
     "node": ">=v10.24.1",
     "npm": ">=6.14.14"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib/**/*.js"
-    ]
-  },
   "dependencies": {
     "@nuxt/kit": "3.7.3",
     "sass-resources-loader": "2.2.5"
@@ -80,7 +73,7 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/module-builder": "^0.4.0",
+    "@nuxt/module-builder": "0.5.1",
     "@nuxt/schema": "3.7.3",
     "@nuxt/test-utils": "3.7.3",
     "@nuxt/webpack-builder": "3.7.3",

@@ -5,15 +5,15 @@
 </template>
 
 <style lang="scss">
-  @use 'sass:math';
+@use 'sass:math';
 
-  .ymca {
-    color: $gray;
-    line-height: pow(4, 2);
-  }
+.ymca {
+  color: $gray;
+  line-height: pow(4, 2);
+}
 </style>
 
 <style lang="sass">
-  .ymca
-    background-color: $white
+.ymca
+  background-color: $white
 </style>
