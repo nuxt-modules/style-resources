@@ -8,7 +8,15 @@
       "name": "Alexander Lichter <npm@lichter.io>"
     }
   ],
-  "main": "lib/module.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
   "repository": {
     "mode": "git",
     "url": "git+https://github.com/nuxt-community/style-resources-module"
@@ -28,11 +36,11 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "release": "standard-version && git push --follow-tags && npm publish",
-    "commitlint": "commitlint -e $GIT_PARAMS",
+    "commitlint": "commitlint --config commitlint.config.cjs -e $GIT_PARAMS",
     "coverage": "codecov",
     "prepare": "husky install"
   },
-  "types": "types/index.d.ts",
+  "types": "./dist/types.d.ts",
   "eslintIgnore": [
     ".nuxt",
     "coverage",
@@ -41,8 +49,7 @@
     "node_modules"
   ],
   "files": [
-    "lib",
-    "types"
+    "dist"
   ],
   "keywords": [
     "nuxtjs",
