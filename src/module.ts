@@ -1,10 +1,11 @@
 import {
   defineNuxtModule,
-  resolveModule,
   resolveAlias,
   resolveFiles,
   resolvePath,
   extendWebpackConfig,
+  tryResolveModule,
+  logger
 } from "@nuxt/kit";
 
 export interface ModuleOptions {
@@ -49,22 +50,27 @@ export default defineNuxtModule<ModuleOptions>({
         const promises = await Promise.all(
           wrappedValue.map(async (path) => {
             let possibleModulePath;
-            try {
-              possibleModulePath = resolveModule(path);
-              // eslint-disable-next-line no-empty
-            } catch (e) {}
-            if (possibleModulePath) {
-              return possibleModulePath;
+
+            try {  
+              possibleModulePath = await tryResolveModule(path, nuxt.options.modulesDir);
+
+              if (possibleModulePath) {
+                return possibleModulePath;
+              }
+  
+              let _path: string | string[] = path;
+
+              try {
+                _path = resolveAlias(path);
+                // eslint-disable-next-line no-empty
+              } catch (error) {}
+
+              _path = await resolveFiles(basePath, _path);
+              return _path;
+            } catch (error) {
+              logger.error(error)
+              throw error;
             }
-
-            let _path: string | string[] = path;
-            try {
-              _path = resolveAlias(path);
-              // eslint-disable-next-line no-empty
-            } catch (error) {}
-            _path = await resolveFiles(basePath, _path);
-
-            return _path;
           })
         );
 
