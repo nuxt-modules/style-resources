@@ -6,6 +6,10 @@
   "contributors": [
     {
       "name": "Alexander Lichter <npm@lichter.io>"
+    },
+    {
+      "name": "Ryota Watanabe",
+      "url": "https://github.com/wattanx"
     }
   ],
   "type": "module",
