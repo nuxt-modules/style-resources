@@ -7,7 +7,7 @@
 
 If you would like to use the stable version for Nuxt 2, please see the [`mater` branch](https://github.com/nuxt-community/style-resources-module/tree/master)
 
-If you are using vite, this module is unnecessary.
+If you are using Vite, this module is not needed.
 
 You can use the [`css.preprocessorOptions`](https://vitejs.dev/config/shared-options.html#css-preprocessoroptions) instead.
 
