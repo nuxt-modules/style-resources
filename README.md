@@ -5,7 +5,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-If you would like to use the stable version for Nuxt 2, please see the [`mater` branch](https://github.com/nuxt-community/style-resources-module/tree/master)
+Nuxt 2 is supported with `@nuxtjs/style-resources@^1`, documentation is on [v1](https://github.com/nuxt-community/style-resources-module/tree/v1) branch.
 
 If you are using Vite, this module is not needed.
 
