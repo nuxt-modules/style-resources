@@ -1,11 +1,15 @@
-# Style Resources for Nuxt 2 - Nobody likes extra @import statements!
+# Style Resources for Nuxt 3 - Nobody likes extra @import statements!
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
->
+Nuxt 2 is supported with `@nuxtjs/style-resources@^1`, documentation is on [v1](https://github.com/nuxt-community/style-resources-module/tree/v1) branch.
+
+If you are using Vite, this module is not needed.
+
+You can use the [`css.preprocessorOptions`](https://vitejs.dev/config/shared-options.html#css-preprocessoroptions) instead.
 
 [📖 **Release Notes**](CHANGELOG.md)
 

@@ -4,6 +4,9 @@ module.exports = {
     sourceType: 'module'
   },
   extends: [
-    '@nuxtjs/eslint-config-typescript'
-  ]
+    '@nuxt/eslint-config'
+  ],
+  rules: {
+    "vue/multi-word-component-names": "off",
+  }
 }

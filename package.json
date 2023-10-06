@@ -6,9 +6,21 @@
   "contributors": [
     {
       "name": "Alexander Lichter <npm@lichter.io>"
+    },
+    {
+      "name": "Ryota Watanabe",
+      "url": "https://github.com/wattanx"
     }
   ],
-  "main": "lib/module.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
   "repository": {
     "mode": "git",
     "url": "git+https://github.com/nuxt-community/style-resources-module"
@@ -20,15 +32,19 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt dev --config-file test/fixture/sass/nuxt.config.js",
-    "lint": "eslint --ext .js,.ts,.vue lib test types",
-    "test": "yarn lint && jest",
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "lint": "eslint --ext .js,.ts,.vue src test",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
     "release": "standard-version && git push --follow-tags && npm publish",
-    "commitlint": "commitlint -e $GIT_PARAMS",
+    "commitlint": "commitlint --config commitlint.config.cjs -e $GIT_PARAMS",
     "coverage": "codecov",
     "prepare": "husky install"
   },
-  "types": "types/index.d.ts",
+  "types": "./dist/types.d.ts",
   "eslintIgnore": [
     ".nuxt",
     "coverage",
@@ -37,8 +53,7 @@
     "node_modules"
   ],
   "files": [
-    "lib",
-    "types"
+    "dist"
   ],
   "keywords": [
     "nuxtjs",
@@ -54,39 +69,33 @@
     "node": ">=v10.24.1",
     "npm": ">=6.14.14"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib/**/*.js"
-    ]
-  },
   "dependencies": {
-    "consola": "^2.15.3",
-    "glob-all": "^3.2.1",
-    "sass-resources-loader": "^2.2.4"
+    "@nuxt/kit": "3.7.3",
+    "sass-resources-loader": "2.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@nuxt/types": "^2.15.7",
-    "@nuxtjs/eslint-config-typescript": "^6.0.1",
-    "@types/jest": "^27.0.0",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/module-builder": "0.5.1",
+    "@nuxt/schema": "3.7.3",
+    "@nuxt/test-utils": "3.7.3",
+    "@nuxt/webpack-builder": "3.7.3",
     "codecov": "^3.8.3",
-    "eslint": "^7.32.0",
+    "eslint": "^8.49.0",
     "get-port": "^5.1.1",
     "husky": "^7.0.1",
-    "jest": "^27.0.6",
     "jsdom": "^16.7.0",
-    "less": "^4.1.1",
-    "less-loader": "^4.1.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.2",
     "mathsass": "^0.11.0",
-    "nuxt-edge": "^2.16.0-27132492.cdbea391",
-    "sass": "^1.37.5",
-    "sass-loader": "^7.3.1",
-    "standard-version": "^9.3.1",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.2",
-    "typescript": "^4.3.5"
-  }
+    "nuxt": "3.7.3",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.1",
+    "stylus": "^0.59.0",
+    "stylus-loader": "^7.1.2",
+    "typescript": "^5.1.3",
+    "vitest": "0.34.4"
+  },
+  "packageManager": "pnpm@8.8.0"
 }

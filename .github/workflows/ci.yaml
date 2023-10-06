@@ -4,10 +4,10 @@ name: CI
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
   build:
@@ -16,17 +16,23 @@ jobs:
       CI: true
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [18.x, 20.x]
     name: Use Node.js ${{ matrix.node-version }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.8.0
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install
-        run: yarn
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Stub
+        run: pnpm dev:prepare
       - name: Unittesting
-        run: yarn test
+        run: pnpm test
       - name: Linting
-        run: yarn lint
+        run: pnpm lint
