@@ -30,6 +30,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Stub
+        run: pnpm dev:prepare
       - name: Unittesting
         run: pnpm test
       - name: Linting
