@@ -4,10 +4,10 @@ name: CI
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
   build:
@@ -20,6 +20,9 @@ jobs:
     name: Use Node.js ${{ matrix.node-version }}
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.8.0
       - name: Setup node
         uses: actions/setup-node@v3
         with:
