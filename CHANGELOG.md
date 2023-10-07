@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/nuxt-community/style-resources-module/compare/v1.2.1...v2.0.0) (2023-10-06)
+
+### Features
+
+* Support for Nuxt 3 ([#214](https://github.com/nuxt-community/style-resources-module/pull/214)) ([1dd88cb](https://github.com/nuxt-community/style-resources-module/commit/1dd88cb33d8c0bb08edc836c0766be728020b1e0))
+
 ### [1.2.1](https://github.com/nuxt-community/style-resources-module/compare/v1.2.0...v1.2.1) (2021-08-05)
 
 
