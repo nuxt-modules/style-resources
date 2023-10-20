@@ -31,15 +31,15 @@ Use this module only to import variables, mixins, functions (et cetera) as they 
 ## Setup
 
 - If not already present, add the dependencies you need for SASS/LESS/Stylus (depending on your needs)
-  - SASS: `yarn add sass-loader sass` (for Nuxt 2 use: ``sass-loader@10``)
+  - SASS: `yarn add sass-loader sass`
   - LESS: `yarn add less-loader less`
   - Stylus: `yarn add stylus-loader stylus`
 - Add `@nuxtjs/style-resources` dependency using yarn or npm to your project (`yarn add -D @nuxtjs/style-resources`)
-- Add `@nuxtjs/style-resources` to `buildModules` section of `nuxt.config.js`:
+- Add `@nuxtjs/style-resources` to `modules` section of `nuxt.config.ts`:
 
-```js
-export default {
-  buildModules: [
+```ts
+export default defineNuxtConfig({
+  modules: [
     '@nuxtjs/style-resources',
   ],
 
@@ -51,22 +51,22 @@ export default {
    stylus: [],
    hoistUseStatements: true  // Hoists the "@use" imports. Applies only to "sass", "scss" and "less". Default: false.
   }
-}
+})
 ```
 
 ## Examples
 
 ### LESS Example
 
-`nuxt.config.js`:
+`nuxt.config.ts`:
 ```js
-export default {
+export default defineNuxtConfig({
   css: ['~assets/global.less'],
-  buildModules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources'],
   styleResources: {
     less: './assets/vars/*.less'
   }
-}
+})
 ```
 
 `assets/global.less`
@@ -127,17 +127,17 @@ export default {
 
 ### SCSS Example
 
-`nuxt.config.js`:
+`nuxt.config.ts`:
 ```js
-export default {
-  buildModules: ['@nuxtjs/style-resources'],
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/style-resources'],
   styleResources: {
     scss: [
       './assets/vars/*.scss',
       './assets/abstracts/_mixins.scss' // use underscore "_" & also file extension ".scss"
       ]
   }
-}
+})
 ```
 
 > Instead of `'./assets/abstracts/_mixins.scss'` you can use also `'~assets/abstracts/_mixins.scss'`
