@@ -1,8 +1,8 @@
-jest.setTimeout(60000)
+import { consola } from 'consola'
+import getPort from 'get-port'
+import { Nuxt, Builder } from 'nuxt-edge'
 
-const consola = require('consola')
-const getPort = require('get-port')
-const { Nuxt, Builder } = require('nuxt-edge')
+jest.setTimeout(60000)
 
 let nuxt, port
 
