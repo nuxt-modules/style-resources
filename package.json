@@ -91,7 +91,7 @@
     "mathsass": "^0.11.0",
     "nuxt": "3.7.3",
     "sass": "^1.62.1",
-    "sass-loader": "^13.3.1",
+    "sass-loader": "^16.0.5",
     "stylus": "^0.59.0",
     "stylus-loader": "^8.1.1",
     "typescript": "^5.1.3",
