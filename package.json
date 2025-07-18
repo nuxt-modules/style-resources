@@ -82,7 +82,7 @@
     "@nuxt/test-utils": "3.7.3",
     "@nuxt/webpack-builder": "3.7.3",
     "codecov": "^3.8.3",
-    "eslint": "^8.49.0",
+    "eslint": "^9.31.0",
     "get-port": "^5.1.1",
     "husky": "^7.0.1",
     "jsdom": "^26.1.0",
